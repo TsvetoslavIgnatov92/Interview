@@ -1,0 +1,208 @@
+@import "@styles/_mixins.scss";
+
+span, p, h1, h2, h3, h4, h5, i {
+    &:focus {
+        outline: none;
+    }
+}
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    @media screen and (max-width: 1600px) {
+        font-size: 14px;
+    }
+}
+body {
+    min-height: 100vh;
+    background: $white;
+    @include app-background-image;
+    @include custom-scrollbar-theme;
+}
+input {
+    box-shadow: none;
+}
+img {
+    max-width: $full-container-width;
+}
+
+video {
+    outline: none;
+}
+
+.company-color {
+    background-color: $company;
+}
+.company-dashed-underline {
+    border-bottom: 1px dashed $company-underline;
+}
+.company-border {
+    border: 1px solid $company;
+}
+.company-lighter-color {
+    background-color: $company-dark;
+}
+.industry-color {
+    background-color: $industry;
+}
+.industry-dashed-underline {
+    border-bottom: 1px dashed $industry-underline;
+}
+.industry-border {
+    border: 1px solid $industry;
+}
+.industry-lighter-color {
+    background-color: $industry-dark;
+}
+.companytype-color {
+    background-color: $companytype;
+}
+.companytype-dashed-underline {
+    border-bottom: 1px dashed $companytype-underline;
+}
+.companytype-border {
+    border: 1px solid $companytype;
+}
+.companytype-lighter-color {
+    background-color: $companytype-dark;
+}
+.geography-color {
+    background-color: $geography;
+}
+.geography-dashed-underline {
+    border-bottom: 1px dashed $geography-underline;
+}
+.geography-border {
+    border: 1px solid $geography;
+}
+.geography-lighter-color {
+    background-color: $geography-dark;
+}
+.transactiontype-color {
+    background-color: $transactiontype;
+}
+.transactiontype-dashed-underline {
+    border-bottom: 1px dashed $transactiontype-underline;
+}
+.transactiontype-border {
+    border: 1px solid $transactiontype;
+}
+.transactiontype-lighter-color {
+    background-color: $transactiontype-dark;
+}
+.specialism-color {
+    background-color: $specialism;
+}
+.specialism-dashed-underline {
+    border-bottom: 1px dashed $specialism-underline;
+}
+.specialism-border {
+    border: 1px solid $specialism;
+}
+.specialism-lighter-color {
+    background-color: $specialism-dark;
+}
+.product-color {
+    background-color: $product;
+}
+.product-dashed-underline {
+    border-bottom: 1px dashed $product-underline;
+}
+.product-border {
+    border: 1px solid $product;
+}
+.product-lighter-color {
+    background-color: $product-dark;
+}
+.keyword-color {
+  background-color: $keyword;
+}
+.keyword-dashed-underline {
+    border-bottom: 1px dashed $keyword-underline;
+}
+.keyword-border {
+  border: 1px solid $keyword;
+}
+.keyword-lighter-color {
+  background-color: $keyword-dark;
+}
+.nowrap-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.wrapper {
+    width: $full-container-width;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: $answer-modules-grid-padding;
+    padding-right: $answer-modules-grid-padding;
+}
+.custom-scrollbar {
+    @include custom-scrollbar-theme;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    &.vertical-center {
+        align-items: center;
+    }
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.text-no-wrap {
+    white-space: nowrap;
+}
+.csv-link {
+    display: none;
+}
+.link {
+    color: $ey-color;
+}
+.entity-type {
+    cursor: pointer;
+    &:hover {
+        border-bottom-style: solid;
+    }
+}
+.margin-auto {
+    margin: 0 auto;
+}
+.lds-loader-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($white, .7);
+    z-index: 2;
+    &.loader-top {
+        align-items: flex-start;
+        .lds-facebook {
+            top: 200px;
+        }
+    }
+    &.loader-white {
+        .lds-facebook {
+            div {
+                background: $white;
+            }
+        }
+    }
+}
+.modal-scroll-responsive {
+    @media screen and (max-height: 700px) {
+        max-height: 500px;
+    }
+    @media screen and (max-height: 600px) {
+        max-height: 400px;
+    }
+    @media screen and (max-height: 500px) {
+        max-height: 250px;
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "Company": [
+        {
+            "name": "Arkhema",
+            "description": "Arkhema description"
+        },
+        {
+            "name": "Arkhema 2",
+            "description": "Arkhema description 2"
+        }
+    ],
+    "Industry": [
+        {
+            "name": "Healt"
+        },
+        {
+            "name": "Healt 2"
+        }
+    ],
+    "Transaction type": [
+        {
+            "name": "Series A"
+        },
+        {
+            "name": "Series B"
+        }
+    ],
+    "Company-type": [
+        {
+            "name": "Startup"
+        },
+        {
+            "name": "Private"
+        }
+    ],
+    "Specialism": [
+        {
+            "name": "AR / VR"
+        },
+        {
+            "name": "Artificial Intelligence"
+        }
+    ],
+    "Geography": [
+        {
+            "name": "Argentina"
+        },
+        {
+            "name": "Armenia"
+        }
+    ],
+    "Product": [
+        {
+            "name": "AR / VR"
+        },
+        {
+            "name": "AR / VR"
+        }
+    ]
+}
