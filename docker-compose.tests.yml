@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+
+  web-service-tests:
+    build:
+      context: .
+      dockerfile: ./Dockerfile-Dev
+    volumes:
+      - ./scripts:/usr/src/app/scripts
+      - ./public:/usr/src/app/public
+      - ./config:/usr/src/app/config
+      - ./src:/usr/src/app/src
+      - ./package.json:/usr/src/app/package.json
+    command: yarn test

@@ -1,0 +1,6 @@
+./docker-compose.yml
+./Dockerfile
+./README.md
+./Dockerfile-Prod
+**/__snapshots__
+./node_modules

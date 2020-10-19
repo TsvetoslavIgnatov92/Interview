@@ -1,0 +1,15 @@
+FROM node:11-alpine@sha256:1ea975c6ba5be52074af83445658b060d82fc03bbf70b74137c3e2b5452cee4f as build
+
+RUN apk update && \
+  apk add git openssh python
+
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+
+COPY /package.json /usr/src/app/
+
+RUN npm install
+
+COPY ./ /usr/src/app
+
+CMD npm run-script start
